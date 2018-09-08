@@ -1,0 +1,22 @@
+{
+  "name": "async-self-cert",
+  "version": "1.0.0",
+  "description": "Simple tool to help you creating self-signing SSL Certificate for develop env based on openssl",
+  "main": "index.js",
+  "keywords": [
+    "ssl",
+    "openssl",
+    "self-signing",
+    "develop"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShenTengTu/async-self-cert.git"
+  },
+  "homepage": "https://github.com/ShenTengTu/async-self-cert#readme",
+  "author": "ShenTengTu",
+  "license": "MIT"
+}
