@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/async-self-cert.svg)](https://badge.fury.io/js/async-self-cert)
+
 # Help you creating self-signing SSL Certificate
 Simple tool to help you creating self-signing SSL Certificate for develop env based on openssl.
 
@@ -123,7 +125,7 @@ Generate a RSA-2048 key for Root SSL certificate.
 - `keyFile` : root key file name
 - `fileName` : root cert file name
 - `config` : root config file name
-- `passout` & `passoutArg` : (Optional) see the **PASS PHRASE ARGUMENTS** section in [openssl](https://www.openssl.org/docs/man1.0.2/apps/openssl.html)
+- `passin` & `passoutArg` : (Optional) see the **PASS PHRASE ARGUMENTS** section in [openssl](https://www.openssl.org/docs/man1.0.2/apps/openssl.html)
 - **return** a fulfilled or rejected `Promise` with value `[error, stdout, stderr]`
 
 ### `async function genDomainCSR (domainName)`
@@ -137,5 +139,5 @@ Generate a RSA-2048 key for Root SSL certificate.
 - `rootCAKey` : root key file name
 - `rootCACert` : root cert file name
 - `rootCAserial` : (Optional) root srl file name,  need after first sign.
-- `passout` & `passoutArg` : (Optional) see the **PASS PHRASE ARGUMENTS** section in [openssl](https://www.openssl.org/docs/man1.0.2/apps/openssl.html)
+- `passin` & `passoutArg` : (Optional) see the **PASS PHRASE ARGUMENTS** section in [openssl](https://www.openssl.org/docs/man1.0.2/apps/openssl.html)
 - **return** a fulfilled or rejected `Promise` with value `[error, stdout, stderr]`
